@@ -13,6 +13,7 @@ public class sign_up {
             files.println("this is something in file");
             files.close();
             System.out.println("Done");
+            System.out.println("Done step two")
         } catch (IOException e) {
 
             e.printStackTrace();
