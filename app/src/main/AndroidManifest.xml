@@ -10,6 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CityPath">
         <activity
+            android:name=".UpdateAccount"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateUser"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Entertainment"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

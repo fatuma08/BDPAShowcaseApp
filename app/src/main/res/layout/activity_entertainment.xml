@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#FFFFFF">
+    tools:context=".Entertainment">
 
     <TextView
-        android:id="@+id/pageFood"
+        android:id="@+id/pageEntertainment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20px"
-        android:text="Food"
+        android:text="Entertainment"
         android:textAppearance="Bold"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -24,17 +23,17 @@
         app:layout_constraintVertical_bias="0.102" />
 
     <LinearLayout
-        android:id="@+id/breakfastB"
+        android:id="@+id/festConB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30px"
         android:layout_marginRight="30px"
         android:layout_marginTop="35px"
-        app:layout_constraintTop_toBottomOf="@+id/pageFood"
+        app:layout_constraintTop_toBottomOf="@+id/pageEntertainment"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
         <ImageView
-            android:id="@+id/breakfastImage"
+            android:id="@+id/concertImage"
             android:layout_width="250px"
             android:layout_height="250px"
             android:padding="8px"
@@ -42,7 +41,7 @@
             />
 
         <TextView
-            android:id="@+id/breakfastText"
+            android:id="@+id/festConText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25px"
@@ -55,17 +54,17 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/lunchB"
+        android:id="@+id/theaterB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30px"
         android:layout_marginRight="30px"
-        android:layout_marginTop="30px"
-        app:layout_constraintTop_toBottomOf="@+id/breakfastB"
+        android:layout_marginTop="35px"
+        app:layout_constraintTop_toBottomOf="@+id/festConB"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
         <ImageView
-            android:id="@+id/lunchImage"
+            android:id="@+id/theaterImage"
             android:layout_width="250px"
             android:layout_height="250px"
             android:padding="8px"
@@ -73,7 +72,7 @@
             />
 
         <TextView
-            android:id="@+id/lunchText"
+            android:id="@+id/theaterText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25px"
@@ -86,17 +85,17 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/dinnerB"
+        android:id="@+id/gamesB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30px"
         android:layout_marginRight="30px"
-        android:layout_marginTop="30px"
-        app:layout_constraintTop_toBottomOf="@+id/lunchB"
+        android:layout_marginTop="35px"
+        app:layout_constraintTop_toBottomOf="@+id/theaterB"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
         <ImageView
-            android:id="@+id/dinnerImage"
+            android:id="@+id/gamesImage"
             android:layout_width="250px"
             android:layout_height="250px"
             android:padding="8px"
@@ -104,7 +103,7 @@
             />
 
         <TextView
-            android:id="@+id/dinnerText"
+            android:id="@+id/gamesText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25px"
@@ -117,17 +116,17 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/snacksB"
+        android:id="@+id/sportsB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30px"
         android:layout_marginRight="30px"
-        android:layout_marginTop="30px"
-        app:layout_constraintTop_toBottomOf="@+id/dinnerB"
+        android:layout_marginTop="35px"
+        app:layout_constraintTop_toBottomOf="@+id/gamesB"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
         <ImageView
-            android:id="@+id/snacksImage"
+            android:id="@+id/sportsImage"
             android:layout_width="250px"
             android:layout_height="250px"
             android:padding="8px"
@@ -135,7 +134,7 @@
             />
 
         <TextView
-            android:id="@+id/snacksText"
+            android:id="@+id/sportsText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25px"

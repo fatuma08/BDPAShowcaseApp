@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateAccount">
+    <TextView
+        android:id="@+id/pageUpdateAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:text="Update Account"
+        android:textAppearance="Bold"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <LinearLayout
+        android:id="@+id/ll_oldUsernameField"
+        android:layout_width="374dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pageUpdateAcc">
+
+        <EditText
+            android:id="@+id/oldUserField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="50px"
+            android:layout_marginRight="30px"
+            android:layout_marginBottom="30px"
+            android:ems="16"
+            android:hint="Old Username"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="151dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_oldPass"
+        android:layout_width="374dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_oldUsernameField">
+
+        <EditText
+            android:id="@+id/oldPassField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="8px"
+            android:layout_marginRight="30px"
+            android:layout_marginBottom="30px"
+            android:ems="16"
+            android:hint="Old Password"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="151dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_newFName"
+        android:layout_width="374dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_oldPass">
+
+        <EditText
+            android:id="@+id/newFNameField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="8px"
+            android:layout_marginRight="30px"
+            android:layout_marginBottom="30px"
+            android:ems="16"
+            android:hint="New First Name"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="151dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_newLName"
+        android:layout_width="374dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_newFName">
+
+        <EditText
+            android:id="@+id/newLNameField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="8px"
+            android:layout_marginRight="30px"
+            android:layout_marginBottom="30px"
+            android:ems="16"
+            android:hint="New Last Name"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="151dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_newEmail"
+        android:layout_width="374dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_newLName">
+
+        <EditText
+            android:id="@+id/newEmailField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="8px"
+            android:layout_marginRight="30px"
+            android:layout_marginBottom="30px"
+            android:ems="16"
+            android:hint="New Email"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="151dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_newUsername"
+        android:layout_width="374dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_newEmail">
+
+        <EditText
+            android:id="@+id/newUsernameField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="8px"
+            android:layout_marginRight="30px"
+            android:layout_marginBottom="30px"
+            android:ems="16"
+            android:hint="New Username"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="151dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_newPassword"
+        android:layout_width="374dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_newUsername">
+
+        <EditText
+            android:id="@+id/newPasswordField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="8px"
+            android:layout_marginRight="30px"
+            android:layout_marginBottom="30px"
+            android:ems="16"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="151dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_updateAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_newPassword" />
+        //app:layout_constraintTop_toBottomOf="@+id/ll_oldUsernameField" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
