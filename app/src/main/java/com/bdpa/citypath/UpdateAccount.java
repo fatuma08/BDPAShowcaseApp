@@ -3,11 +3,12 @@ package com.bdpa.citypath;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 public class UpdateAccount extends AppCompatActivity {
-    Button Update;
+    Button Update_btn;
     EditText checkUserName, checkPassword, makeNewFName, makeNewLName, makeNewEmail, makeNewUsername, makeNewPassword;
     public static void main(String[] args) {
 
@@ -16,7 +17,7 @@ public class UpdateAccount extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_account);
-        Update = findViewById(R.id.btn_updateAcc);
+        Update_btn = findViewById(R.id.btn_updateAcc);
         checkUserName = findViewById(R.id.oldUserField);
         checkPassword = findViewById(R.id.oldPassField);
         makeNewFName = findViewById(R.id.newFNameField);
@@ -25,27 +26,29 @@ public class UpdateAccount extends AppCompatActivity {
         makeNewUsername = findViewById(R.id.newUsernameField);
         makeNewPassword = findViewById(R.id.newPasswordField);
 
+        Update_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                checkUpdates();
+            }
+        });
     }
-    public static String checkUpdates() {
+    public void checkUpdates() {
         testUser tu = new testUser();
         tu.setUsername("TestUser");
         tu.setPassword("testUser1");
         tu.setFirstname("Test");
         tu.setLastname("User");
         tu.setEmail("TestUser@gmail.com");
-       /* if (checkUserName.value = tu.getUsername() && checkPassword.value = tu.getPassword() && makeNewFName.value != tu.getFirstname()
-                && makeNewLName.value != tu.getLastname() && makeNewEmail.value != tu.getEmail() && makeNewUserName != tu.getUsername()
-                && makeNewPassword.value != tu.getPassword()) {
-            tu.setUsername(makeNewUsername);
-            tu.setPassword(makePassword);
-            tu.setFirstname(makeNewFName);
-            tu.setLastname(makeNewLName);
-            tu.setEmail(makeNewEmail);
-            return "Updated Account!";
 
-        }*/
-        return "Make Sure Info is Correct";
+        if (checkUserName.equals(tu.getUsername()) && checkPassword.equals(tu.getPassword()) &&
+                !(makeNewFName.equals(tu.getFirstname()) && makeNewLName.equals(tu.getLastname()) &&
+                 makeNewEmail.equals(tu.getEmail()) && makeNewUsername.equals(tu.getUsername()) && makeNewPassword.equals(tu.getPassword()))) {
+            System.out.println("Account changed successfully!");
+        }else {
+            System.out.println("Check information is entered correctly...");
+        }
     }
-    //String newFName, String newLName,String newUsername, String newEmail, String newPassword, String oldUser, String oldPass
+
 
 }
