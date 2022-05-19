@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CityPath">
         <activity
-            android:name=".UpdateAccount"
+            android:name=".Favorites"
             android:exported="false" />
         <activity
-            android:name=".UpdateUser"
+            android:name=".UpdateAccount"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
